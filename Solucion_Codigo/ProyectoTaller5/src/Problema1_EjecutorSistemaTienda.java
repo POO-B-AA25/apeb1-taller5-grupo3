@@ -65,9 +65,9 @@ public class Problema1_EjecutorSistemaTienda {
 }
 
 class Producto {
-    private String nombre;
-    private double precio;
-    private int cantidad;
+    public String nombre;
+    public double precio;
+    public int cantidad;
 
     public Producto() {}
 
@@ -96,10 +96,10 @@ class Producto {
 }
 
 class CarritoCompras {
-    private Producto[] productos;
-    private int[] cantidades;
-    private int contadorProductos;
-    private final int capacidadMaxima = 100;
+    public Producto[] productos;
+    public int[] cantidades;
+    public int contadorProductos;
+    public final int capacidadMaxima = 100;
 
     public CarritoCompras() {
         this.productos = new Producto[capacidadMaxima];
